@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ImageView
+            android:id="@+id/homeTab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_1_selected"
+            android:onClick="tabAction"/>
+
+        <ImageView
+            android:id="@+id/categoryTab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_2_unseleted"
+            android:onClick="tabAction"/>
+
+        <ImageView
+            android:id="@+id/cartTab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_3_unseleted"
+            android:onClick="tabAction"/>
+
+        <ImageView
+            android:id="@+id/checkOutTab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_4_unselected"
+            android:onClick="tabAction"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

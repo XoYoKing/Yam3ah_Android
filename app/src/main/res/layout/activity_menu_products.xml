@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.ds.yam3ah.yam3ah.HomeActivity">
+
+
+    <include
+        android:id="@+id/topbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/topheader"
+        android:layout_alignParentTop="true"/>
+
+    <Spinner
+        android:id="@+id/searchfieldMenu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/topbar"
+        android:queryHint="Search"
+        android:padding="2dp"
+        android:background="#a0ddd8"
+        android:layout_marginTop="1dp"
+        android:spinnerMode="dialog"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true">
+    </Spinner>
+
+    <ListView
+        android:id="@+id/menuProductList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchfieldMenu"
+        android:layout_above="@+id/bottomTabs"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/bg_company"
+        android:layout_marginBottom="0dp">
+
+    </ListView>
+
+    <include
+        android:id="@+id/bottomTabs"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        layout="@layout/bottomtabs"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/grid_item_height"
+    android:minWidth="@dimen/grid_item_height">
+
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <!--android:background="@drawable/stub"-->
+
+
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:background="@drawable/trans_white_bar"
+        >-->
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/companyLogo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        />
+
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mcdonald"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/companyLogo"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"/>-->
+    <!--</RelativeLayout>-->
+
+  <!--  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/black_trans"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aalo Tikki"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true"
+            />
+
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="12dp"
+            android:layout_height="20dp"
+            android:background="@drawable/arrow"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>-->
+
+</RelativeLayout>

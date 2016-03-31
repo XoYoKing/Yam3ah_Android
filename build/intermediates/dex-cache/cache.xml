@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\adt-bundle-windows-x86_64-20140702\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="D:\Workspace_NEw\Yam3ah\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-fb6652f0d794c0f65d5bbc1cbe99b6e93eb9f336.jar" />
+    </item>
+    <item
+        jar="C:\Users\admin\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="D:\Workspace_NEw\Yam3ah\app\build\intermediates\pre-dexed\debug\library-2.4.0-16c20551d1515298e4f820dbb2437cde217a49b7.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_NEw\Yam3ah\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\1.2.2\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="803c4c913beac8f7980d680c725a40835d1d7c77">
+        <dex dex="D:\Workspace_NEw\Yam3ah\app\build\intermediates\pre-dexed\debug\classes-68aade709e5267165d09397b6db4249795d32164.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_NEw\Yam3ah\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="D:\Workspace_NEw\Yam3ah\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-a5273faad4241020e7474d21c38a7981a0366a41.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_NEw\Yam3ah\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="D:\Workspace_NEw\Yam3ah\app\build\intermediates\pre-dexed\debug\classes-9b28e9ce43c32554a921d2b5a5eb534566414268.jar" />
+    </item>
+    <item
+        jar="D:\Workspace_NEw\Yam3ah\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="D:\Workspace_NEw\Yam3ah\app\build\intermediates\pre-dexed\debug\classes-2fee4ada71ec3cd6775ba14cfd92929216c3a794.jar" />
+    </item>
+    <item
+        jar="C:\Users\admin\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.3.2\d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27\picasso-2.3.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27">
+        <dex dex="D:\Workspace_NEw\Yam3ah\app\build\intermediates\pre-dexed\debug\picasso-2.3.2-6b05022a535a5e7385c35226630aa95683d4d749.jar" />
+    </item>
+
+</items>

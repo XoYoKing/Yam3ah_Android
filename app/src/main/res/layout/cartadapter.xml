@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cart_box"
+        android:layout_marginBottom="10dp">
+
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/centerContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/productImage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/rightContainer"
+            android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/itemStr"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="Item Name :"
+            android:textColor="#40BFB5"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/itemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berger "
+            android:textColor="#40BFB5"
+            android:textSize="10sp"
+            android:layout_toRightOf="@+id/itemStr"
+            android:layout_marginTop="10dp"
+
+            />
+        <TextView
+            android:id="@+id/quantityStr"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="Quantity : "
+            android:textColor="#40BFB5"
+            android:textSize="10sp"
+            android:layout_below="@+id/itemText"
+            android:layout_marginTop="10dp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/quantityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="322132"
+            android:textColor="#40BFB5"
+            android:textSize="10sp"
+            android:layout_toRightOf="@+id/quantityStr"
+            android:layout_below="@+id/itemText"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/priceStr"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="Price : "
+            android:textColor="#40BFB5"
+            android:textSize="10sp"
+            android:layout_below="@+id/quantityStr"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/priceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$100000"
+            android:textColor="#40BFB5"
+            android:textSize="10sp"
+            android:layout_toRightOf="@+id/priceStr"
+            android:layout_below="@+id/quantityText"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rightContainer"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+
+            android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/editBtn"
+            android:layout_width="50dp"
+            android:layout_height="49dp"
+            android:background="@drawable/edit_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="1dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/deleteBtn"
+            android:layout_width="50dp"
+            android:layout_height="49dp"
+            android:background="@drawable/delete_icon"
+            android:layout_alignParentRight="true"
+
+            android:layout_below="@+id/editBtn"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

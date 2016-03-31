@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/topheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/tandcRela"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llCheck"
+        android:layout_below="@+id/topbar"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textTermndCond"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Curabitur laoreet ex et interdum varius. Duis eu nisi at dui elementum dignissim sed id sem. Duis tempus pellentesque porttitor. Nulla id est erat. Vestibulum at lacus orci. Curabitur scelerisque egestas vehicula. In laoreet leo vel mattis venenatis. Mauris ut velit nisl. Ut eu nisi eros. In hac habitasse platea dictumst. Donec dictum mattis nisi id porta. Pellentesque pharetra neque lorem, ut sagittis velit rhoncus in. Phasellus tortor elit, rutrum in neque condimentum, cursus volutpat elit. Vivamus eu sollicitudin erat, eget sollicitudin eros. Sed in congue urna. Nullam consectetur efficitur ex, sed dapibus quam."
+            android:textSize="13sp"
+            android:textColor="#0F635A"
+            android:layout_marginTop="10dp" />-->
+
+        <WebView
+            android:id="@+id/webViewCondition"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#C1E9E3"></WebView>
+
+       <!-- android:background="#52C0B4"-->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_continue"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkboxagree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/cutomcheck"
+            android:layout_marginLeft="10dp" />
+
+        <TextView android:id="@+id/iAgreeId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="I agree the above terms and conditions."
+            android:textColor="#0F635A" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/bottomTabs"
+        android:layout_margin="10dp"
+        android:background="@drawable/checkout_btn"
+        android:gravity="center"
+        android:text="CONTINUE"
+        android:textColor="@android:color/white" />
+
+    <include
+        android:id="@+id/bottomTabs"
+        layout="@layout/bottomtabs"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

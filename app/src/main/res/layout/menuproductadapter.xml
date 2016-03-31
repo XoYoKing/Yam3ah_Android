@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout android:id="@+id/menuId"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/rightSection">
+
+            <LinearLayout android:id="@+id/imageLL"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/menuProductImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"/>
+
+                </LinearLayout>
+
+            <TextView
+                android:id="@+id/menuProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spicy Berger"
+                android:textColor="#33d9c2"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/imageLL"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView android:id="@+id/productDescId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menuProductName"
+            android:textColor="#33d9c2"
+            android:maxLines="1"
+            android:maxLength="25"
+            android:ellipsize="end"
+            android:layout_toRightOf="@+id/imageLL"
+            android:layout_marginLeft="10dp"
+            android:text="zsdaddd"/>
+
+            <TextView
+                android:id="@+id/menuProductQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Availability:"
+                android:textColor="#33d9c2"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/productDescId"
+                android:layout_toRightOf="@+id/imageLL"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/menuProductQuantValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#33d9c2"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/productDescId"
+                android:layout_toRightOf="@+id/menuProductQuantity"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"/>
+
+       <!-- <ImageView
+            android:id="@+id/bottomTrans"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/black_trans_detail"
+            android:layout_alignParentBottom="true"/>-->
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rightSection"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/addToCart"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/add_cart_btn"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/priceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$1000"
+                android:textColor="#33d9c2"
+                android:singleLine="true"
+                android:layout_below="@+id/addToCart"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="2dp"
+                android:gravity="center" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

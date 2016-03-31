@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ds.yam3ah.yam3ah.HomeActivity">
+
+
+    <include
+        android:id="@+id/topbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/topheader"
+        android:layout_alignParentTop="true" />
+
+   <!-- <EditText
+        android:id="@+id/searchfield"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/topbar"
+        android:layout_margin="10dp"
+        android:background="@drawable/search_field"
+        android:hint="Search"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:textColorHint="@android:color/white" />-->
+    <SearchView
+        android:id="@+id/searchfield"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/topbar"
+        android:layout_margin="10dp"
+        android:background="@drawable/search_field"
+        android:queryHint="Search"
+        android:padding="2dp"
+        android:textColor="@android:color/white"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:textColorHint="@android:color/white">
+    </SearchView>
+
+    <com.ds.yam3ah.yam3ah.SwipeRefreshLayoutBottom
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_above="@+id/bottomTabLayout"
+        android:layout_below="@+id/searchfield"
+        android:layout_width="match_parent" android:visibility="visible"
+        android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/productlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:gravity="center"
+        android:columnWidth="90dp"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="2dp"
+        android:stretchMode="columnWidth"
+        android:layout_above="@+id/bottomTabs"
+        android:layout_marginBottom="10dp">
+    </GridView>
+
+    </com.ds.yam3ah.yam3ah.SwipeRefreshLayoutBottom>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent" android:orientation="vertical"
+        android:layout_height="60dp" android:id="@+id/bottomTabLayout">
+    <include
+        android:id="@+id/bottomTabs"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        layout="@layout/bottomtabs"
+       />
+    </LinearLayout>
+</RelativeLayout>

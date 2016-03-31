@@ -1,0 +1,256 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ds.yam3ah.yam3ah.HomeActivity"
+    android:background="@drawable/bg">
+
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/topheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomTabs"
+        android:layout_below="@+id/topbar"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/cartList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            >
+
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/priceContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/price_bg"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </RelativeLayout>-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomTabs"
+        android:layout_below="@+id/topbar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="false"
+            android:background="@drawable/checkout_btn_empty"
+            android:layout_marginBottom="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/emptycartpanel"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/totalPriceStrfd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your cart is empty.Add item to cart"
+                android:layout_centerInParent="true"
+                android:textColor="#52bfb3"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"/>
+
+        </RelativeLayout>
+        <ScrollView
+            android:id="@+id/cartList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_above="@+id/priceContainer"
+            android:layout_marginBottom="0dp">
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/priceContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+
+            <!--<TextView
+                android:id="@+id/totalItemStr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total items : "
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/totalItemText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:textColor="#0F635A"
+                android:textSize="16dp"
+                android:layout_marginTop="20dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:layout_marginTop ="15dp"
+                android:layout_gravity="center"/>-->
+
+            <RelativeLayout
+                android:id="@+id/checkOutBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/green_trans"
+                android:layout_marginBottom="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+
+                <TextView
+                    android:id="@+id/proceedCheckOutId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PROCEED TO CHECKOUT"
+                    android:layout_centerInParent="true"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp"
+                    android:layout_marginTop="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/checkOutBtn1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_above="@+id/checkOutBtn">
+
+
+                <TextView
+                    android:id="@+id/totalItemStr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total items : "
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#40BFB5"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/totalItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textColor="#40BFB5"
+                    android:textSize="16dp"
+                    android:layout_toRightOf="@+id/totalItemStr" />
+
+                <View
+                    android:id="@+id/horizontalLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/divider_green"
+                    android:layout_below="@+id/totalItemStr"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp" />
+
+                <RelativeLayout
+                    android:id="@+id/totalPriceCon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true"
+
+                    android:layout_below="@+id/horizontalLine">
+
+                    <TextView
+                        android:id="@+id/totalPriceStr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Price : "
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#40BFB5"
+                        android:textSize="20dp"
+                        android:layout_alignParentLeft="true" />
+
+                    <TextView
+                        android:id="@+id/totalPriceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50006 kD"
+                        android:layout_toRightOf="@+id/totalPriceStr"
+                        android:textColor="#40BFB5"
+                        android:textSize="20dp"
+
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- <ImageButton
+                 android:layout_width="250dp"
+                 android:layout_height="50dp"
+                 android:background="@mipmap/checkout_btn1"
+                 android:layout_alignParentBottom="true"
+                 />-->
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/bottomTabs"
+        layout="@layout/bottomtabs"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+
+        android:layout_centerInParent="true">
+
+    </NumberPicker>
+
+</RelativeLayout>
+

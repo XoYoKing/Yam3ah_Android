@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/topheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar"
+        android:background="@drawable/bg_company"
+        android:layout_centerHorizontal="true"
+        android:padding="2dp">
+
+        <LinearLayout android:id="@+id/logoLL"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center">
+
+        <ImageView android:id="@+id/blueLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo_blue"/>
+        </LinearLayout>
+
+       <ImageView android:id="@+id/divider1"
+           android:layout_below="@+id/logoLL"
+           android:layout_width="match_parent"
+           android:layout_height="3dp"
+           android:background="@drawable/divider"/>
+        <RelativeLayout android:layout_below="@+id/divider1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btncod"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold">
+
+            <TextView android:id="@+id/cashText"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:text="CASH"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textColor="#33d9c2"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/selection_arrow"/>
+
+            </RelativeLayout>
+
+        <ImageView android:id="@+id/divider2"
+            android:layout_below="@+id/btncod"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/divider"/>
+
+        <RelativeLayout android:layout_below="@+id/divider2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btnknet"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold">
+
+            <TextView android:id="@+id/knetText"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:text="KNET"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="#33d9c2"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/selection_arrow"/>
+
+        </RelativeLayout>
+         <!--<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/checkout_btn"
+            android:id="@+id/btnknet"
+            android:text="KNET"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginTop="100dp"/>-->
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/bottomTabs"
+        layout="@layout/bottomtabs"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

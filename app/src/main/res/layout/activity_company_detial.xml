@@ -1,0 +1,246 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ds.yam3ah.yam3ah.HomeActivity">
+
+
+    <include
+        android:id="@+id/topbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/topheader"
+        android:layout_alignParentTop="true"/>
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/productImage"
+        android:layout_below="@+id/topbar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:background="@mipmap/price_bg"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@mipmap/black_trans_bg"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/topbar"
+        android:weightSum="2.5"
+        android:layout_above="@+id/bottomTabs">
+
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/companyImage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:orientation="horizontal"/>
+
+                        <!--<<ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@mipmap/price_bg"
+                            android:id="@+id/productImage"/>
+
+
+                        ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@mipmap/price_bg"
+                            android:id="@+id/productImage1"/>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/green_trans"
+            >
+
+            <TextView
+                android:id="@+id/companyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mcdonald"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+            <RelativeLayout
+                android:id="@+id/menuBtn"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/product_btn"
+                android:padding="10dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="15dp"
+                android:onClick="menuMethod">
+
+                <TextView
+                    android:id="@+id/productPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Items"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="10dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addToCartSlice">
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp">
+
+
+                        <TextView
+                            android:id="@+id/descriptionHint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Description"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="16dp"
+                            android:textColor="#33d9c2"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/descriptionText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lorem Ipsum is simply dummy text of the printing and ."
+                            android:layout_alignParentLeft="true"
+                            android:textSize="12dp"
+                            android:textColor="#33d9c2"
+                            android:textStyle="normal"
+                            android:layout_below="@+id/descriptionHint"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:id="@+id/addressHint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Address"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="16dp"
+                            android:textColor="#33d9c2"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/descriptionText"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:id="@+id/addressText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lorem Ipsum is simply dummy text of the printing and ."
+                            android:layout_alignParentLeft="true"
+                            android:textSize="12dp"
+                            android:textColor="#33d9c2"
+                            android:textStyle="normal"
+                            android:layout_below="@+id/addressHint"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:id="@+id/phoneHint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phone Number"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="16dp"
+                            android:textColor="#33d9c2"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/addressText"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:id="@+id/phoneText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12345678909"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="12dp"
+                            android:textColor="#33d9c2"
+                            android:textStyle="normal"
+                            android:layout_below="@+id/phoneHint"
+                            android:layout_marginTop="5dp"/>
+
+
+
+                    </RelativeLayout>
+                </ScrollView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/bottomTabs"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        layout="@layout/bottomtabs"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

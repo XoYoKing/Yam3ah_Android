@@ -1,0 +1,238 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ds.yam3ah.yam3ah.HomeActivity"
+    android:background="@drawable/bg">
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/topheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar">
+
+        <TextView android:id="@+id/pleaseEnterId"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="15dp"
+            android:text="@string/enterdetails"
+            android:textAlignment="gravity"
+            android:textColor="#52bfb3" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_checkout"
+        android:layout_below="@+id/details"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<EditText
+                android:id="@+id/edtFirstname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/green_trans"
+                android:gravity="center"
+                android:hint="First Name"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <EditText
+                android:id="@+id/edtLastName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/green_trans"
+                android:gravity="center"
+                android:hint="Last Name"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+-->
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/blank_text_field"
+                android:gravity="center"
+                android:hint="Email (Optional)"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:imeOptions="actionDone"
+                android:textColorHint="@android:color/white" />
+
+            <EditText
+                android:id="@+id/edtContactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/blank_text_field"
+                android:gravity="center"
+                android:hint="Contact Number"
+                android:inputType="number"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:imeOptions="actionDone"
+                android:textColorHint="@android:color/white" />
+          <TextView
+             android:layout_width="150dp"
+             android:layout_height="40dp"
+             android:text="Address"
+             android:textSize="18sp"
+             android:padding="5dp"
+             android:gravity="center|left"
+             android:layout_marginTop="10dp"
+             android:textColor="#ffffff"/>
+            <Spinner
+                android:id="@+id/addressSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:background="@drawable/blank_text_field"
+                android:gravity="center"
+                android:spinnerMode="dialog"
+                android:imeOptions="actionDone"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <EditText
+                android:id="@+id/blockNumberId"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/blank_text_field"
+                android:gravity="center"
+                android:hint="Block number"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:imeOptions="actionDone"
+                android:textColorHint="@android:color/white" />
+
+            <EditText
+                android:id="@+id/streetNumberId"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/blank_text_field"
+                android:gravity="center"
+                android:hint="Street number"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <EditText
+                android:id="@+id/AvenueId"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/blank_text_field"
+                android:gravity="center"
+                android:hint="Avenue"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <EditText
+                android:id="@+id/buildingnumberId"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/blank_text_field"
+                android:gravity="center"
+                android:hint="House/building number"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <EditText
+                android:id="@+id/floorNumberId"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/blank_text_field"
+                android:gravity="center"
+                android:hint="Floor number"
+                android:inputType="number"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <EditText
+                android:id="@+id/apartmentNumberId"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/blank_text_field"
+                android:gravity="center"
+                android:hint="Apartment number"
+                android:inputType="number"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <EditText
+                android:id="@+id/notesId"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/blank_text_field"
+                android:hint="Notes"
+                android:inputType="text"
+                android:padding="5dp"
+                android:gravity="left|top"
+                android:singleLine="false"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+        <Button
+            android:id="@+id/btn_checkout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/bottomTabs"
+            android:background="@drawable/checkout_btn"
+            android:gravity="center"
+            android:text="CHECKOUT"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/white" />
+
+    <include
+        android:id="@+id/bottomTabs"
+        layout="@layout/bottomtabs"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
